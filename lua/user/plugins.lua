@@ -63,7 +63,6 @@ return packer.startup(function(use)
   use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
   use "lunarvim/darkplus.nvim"
   use "dracula/vim"
-  -- use "altercation/solarized"
   use "navarasu/onedark.nvim"
 	use "morhetz/gruvbox"
   use "folke/tokyonight.nvim"
@@ -104,11 +103,12 @@ return packer.startup(function(use)
 
   -- Git
   use "lewis6991/gitsigns.nvim"
+  use "dinhhuy258/git.nvim"
 
   -- Coc (Conquer of Completion)
   use {'neoclide/coc.nvim', branch = 'release'}
 
-  -- Extra
+  -- Developments
   use "tpope/vim-fugitive"
   use "tpope/vim-rhubarb"
   use "cohama/lexima.vim"
@@ -117,10 +117,12 @@ return packer.startup(function(use)
   use "junegunn/vim-emoji"
   use "jiangmiao/auto-pairs"
   use "sheerun/vim-polyglot"
-  use "suan/vim-instant-markdown"
   use "tribela/vim-transparent"
   use "prettier/vim-prettier"
   use "hail2u/vim-css3-syntax"
+
+  -- Markdown
+  use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
