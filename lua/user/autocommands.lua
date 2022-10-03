@@ -16,6 +16,7 @@ vim.cmd [[
   augroup _markdown
     autocmd!
     autocmd FileType markdown setlocal nowrap
+    autocmd FileType markdown setlocal nonumber
     " autocmd FileType markdown setlocal spell
   augroup end
 
