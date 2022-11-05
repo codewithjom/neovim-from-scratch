@@ -7,6 +7,11 @@ vim.cmd [[
     autocmd FileType qf set nobuflisted
   augroup end
 
+  augroup _developments
+    autocmd!
+    autocmd BufWritePre *.tsx,*.ts,*.js,*.html,*.css,*.php  Prettier
+  augroup end
+
   augroup _git
     autocmd!
     autocmd FileType gitcommit setlocal wrap

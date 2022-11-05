@@ -121,6 +121,7 @@ return packer.startup(function(use)
   use "tribela/vim-transparent"
   use "prettier/vim-prettier"
   use "hail2u/vim-css3-syntax"
+  use "ncm2/ncm2"
 
   -- Markdown
   use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
