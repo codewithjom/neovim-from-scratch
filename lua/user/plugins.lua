@@ -66,7 +66,6 @@ return packer.startup(function(use)
   use "dracula/vim"
   use "navarasu/onedark.nvim"
 	use "morhetz/gruvbox"
-  use "folke/tokyonight.nvim"
 	use "ayu-theme/ayu-vim"
   use "kyazdani42/nvim-palenight.lua"
   use {
