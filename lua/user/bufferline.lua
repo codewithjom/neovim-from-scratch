@@ -9,7 +9,7 @@ bufferline.setup {
     close_command = "Bdelete! %d",
     right_mouse_command = "Bdelete! %d",
     left_mouse_command = "buffer %d",
-    middle_mouse_command = nil, 
+    middle_mouse_command = nil,
     modified_icon = "●",
     left_trunc_marker = "",
     right_trunc_marker = "",
